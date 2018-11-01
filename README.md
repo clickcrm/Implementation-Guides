@@ -9,3 +9,6 @@ The implementation guides below will assist you with integrating ClickCRM.
 
 <h2>Affiliate Backoffice Login API</h2>
 <p>All ClickCRM customers benefit from our automatic integration with the <a href="https://maxweb.com">MaxWeb Affiliate Network</a></p>
+<ul>
+  <li><a href="">Implementation Guide</a>
+</ul>
