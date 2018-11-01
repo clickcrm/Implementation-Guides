@@ -1,5 +1,7 @@
 <h1>MaxWeb Login Implementation Guide</h1>
 <p>Call the RESTful API POST endpoint /initiate with a JSON object containing the properties described below to generate a login link for each affiliate. You will receive a JSON object in the response containing a timestamp, and a login URL which you can present to the affiliates.</p>
+<p><strong>HTTP Request Method:</strong> <code>POST</code><br>
+<strong>REST URL</strong>: <code>https://backoffice.maxweb.com/clickcrm-login/initiate</code><br>
 <h2>Authentication and encryption</h2>
 <p>This API calls are protected using <a href="https://tools.ietf.org/html/rfc7617" rel="nofollow">HTTP Basic Authentication</a>. Your Basic Auth credentials are constructed using your account ID as the user-id and your API secret as the password. You can view and manage your API secret in your ClickCRM account</strong>.
 <br></p>
@@ -41,8 +43,7 @@
 <tr>
 <td align="left"><strong>result</strong></td>
 <td align="left">Number</td>
-<td align="left">1</td>
-  <td align="left"><strong>1</strong> on success. <strong>0</strong> on failure</td>
+<td align="left"><strong>1</strong> on success. <strong>0</strong> on failure</td>
 </tr>
 <tr>
 <td align="left"><strong>redirect_url</strong></td>
@@ -56,3 +57,84 @@
 </tr>
 </tbody>
 </table>
+<h2>Implementation Example in PHP</h2>
+<pre>
+<code>
+function GetLoginLink($emailaddress)
+{
+    $loginLink  = '';
+    $accoundID  = 5396;
+    $privateKey = 'ad64dasd112353813e180e72d10635295e7c151';
+
+    // Generate the authorization token
+    $authorizationToken = base64_encode($accoundID.':'.$privateKey);
+
+    // Build the data array to be submitted (in this case it's the affiliate's email address)
+    $data = array(
+        'emailaddress' => $emailaddress
+    );
+
+    // JSON encode the data
+    $payload = json_encode($data);
+     
+    // Prepare the cURL request
+    $ch = curl_init('https://backoffice.maxweb.com/clickcrm-login/initiate');
+
+    // Set cURL options for POST request
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+     
+    // Set HTTP Header for JSON request 
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        'Accept: application/json',
+        'Content-Type: application/json',
+        'Content-Length: ' . strlen($payload),
+        'Authorization: Basic '.$authorizationToken)
+    );
+
+    // Submit the POST request
+    $result = curl_exec($ch);
+
+    do
+    {
+        if ($result === false)
+        {
+            // Do some general error handling here
+            // echo 'Curl error: ' . curl_error($ch);
+            break;
+        }
+
+        $info = curl_getinfo($ch);
+
+        if ($info['http_code'] != 200)
+        {
+            // Authentication error
+            break;
+        }
+
+        $decodedData = json_decode($result, true);
+
+        if (empty($decodedData['result']))
+        {
+            // Affiliate validation error. A description of the error can be found in $decodedData['result_str']
+            break;
+        }
+
+        $loginLink = $decodedData['redirect_url'];
+
+    } while (false);
+
+    // Close cURL session handle
+    curl_close($ch);
+
+    return $loginLink;
+}
+
+$loginLink = GetLoginLink('affiliateaccount@domainname.com');
+
+// Display the link to the user
+echo '<a href="'.$loginLink.'">Login</a>';
+</code>
+</pre>
