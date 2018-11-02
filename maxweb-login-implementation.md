@@ -3,7 +3,7 @@
 <p><strong>HTTP Request Method:</strong> <code>POST</code><br>
 <strong>REST URL</strong>: <code>https://backoffice.maxweb.com/clickcrm-login/initiate</code><br>
 <h2>Authentication and encryption</h2>
-<p>This API calls are protected using <a href="https://tools.ietf.org/html/rfc7617" rel="nofollow">HTTP Basic Authentication</a>. Your Basic Auth credentials are constructed using your account ID as the user-id and your API secret as the password. You can view and manage your API secret in your ClickCRM account</strong>.
+<p>This API calls are protected using <a href="https://tools.ietf.org/html/rfc7617" rel="nofollow">HTTP Basic Authentication</a>. Your Basic Auth credentials are constructed using your account ID as the user-id and your API secret as the password. You can view and manage your API secret in your ClickCRM account under Profile->API Credentials</strong>.
 <br></p>
 <table>
 <thead>
