@@ -51,6 +51,3 @@ Required items appear in bold type.</p>
 </tr>
 </tbody>
 </table>
-<br>
-<p><strong>Example</strong></p>
-<p><code>https://secure.clickcrm.com/v2/addaffiliate?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&name=John+Doe&emailaddress=john_doe%40mydomain.com</code><br>
