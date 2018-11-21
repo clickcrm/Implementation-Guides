@@ -51,7 +51,7 @@ Required items appear in bold type.</p>
 </tr>
 <tr>
 <td align="left">customer_user_id</td>
-<td align="left">String</td>
+<td align="left">Numeric</td>
 <td align="left">Customer ID in your system</td>
 </tr>
 <tr>
