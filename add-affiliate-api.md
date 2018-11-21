@@ -1,6 +1,6 @@
 <h1>Add Affiliate API - Implementation Guide</h1><br>
 <p>The “Add Affiliate” API should be triggered to create a new affiliate record in the ClickCRM system.</p>
-<p>Note: If you’re using ClickCRM default affiliate signup page – there is no need to call this API. Its designed to be used in cases where the affiliate is created outside of the ClickCRM system</p>
+<p>Note: If you’re using ClickCRM default affiliate signup page – there is no need to call this API. Its designed to be used in cases where the affiliate is created outside of the ClickCRM system.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addaffiliate</code><br></p>
 <p><strong>Parameters</strong><br>
