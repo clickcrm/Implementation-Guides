@@ -15,7 +15,7 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">a</td>
+<td align="left"><strong>a<strong></td>
 <td align="left">NUmeric</td>
 <td align="left">Your clickCRM account ID</td>
 </tr>
