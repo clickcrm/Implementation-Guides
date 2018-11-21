@@ -16,17 +16,17 @@ The implementation guides below will assist you with integrating ClickCRM.
 <h2>Add Affiliate API</h2>
 <p>The API should be triggered to create a new affiliate record in the ClickCRM system.</p>
 <ul>
-  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/maxweb-login-implementation.md">Implementation Guide</a>
+  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/add-affiliate-api.md">Implementation Guide</a>
 </ul>
 
 <h2>Add Charge API</h2>
 <p>The API should be triggered every time a new order or a recurring charge is processed by your shopping cart.</p>
 <ul>
-  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/maxweb-login-implementation.md">Implementation Guide</a>
+  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/add-charge-api.md">Implementation Guide</a>
 </ul>
 
 <h2>Add Refund API</h2>
 <p>The API should be triggered every time every time a transaction must be marked as refunded in the system.</p>
 <ul>
-  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/maxweb-login-implementation.md">Implementation Guide</a>
+  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/add-refund-api.md">Implementation Guide</a>
 </ul>
