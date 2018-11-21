@@ -49,26 +49,6 @@ Required items appear in bold type.</p>
 <td align="left">Numeric</td>
 <td align="left">Flag controlling if we Void the affiliate commission attached to the charge or not</td>
 </tr>
-<tr>
-<td align="left">state</td>
-<td align="left">String</td>
-<td align="left">Affiliate State</td>
-</tr>
-<tr>
-<td align="left">state</td>
-<td align="left">String</td>
-<td align="left">Affiliate State</td>
-</tr>
-<tr>
-<td align="left">zip</td>
-<td align="left">String</td>
-<td align="left">Affiliate Zip</td>
-</tr>
-<tr>
-<td align="left">country</td>
-<td align="left">String</td>
-<td align="left">Affiliate Country</td>
-</tr>
 </tbody>
 </table>
 <br>
