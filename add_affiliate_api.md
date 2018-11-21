@@ -4,7 +4,7 @@
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addaffiliate</code><br></p>
 <p><strong>Parameters</strong><br>
-<strong>Required items appear in bold type.</strong></p>
+Required items appear in bold type.</p>
 <table>
 <thead>
 <tr>
