@@ -1,4 +1,4 @@
-<h1>MaxWeb Login Implementation Guide</h1>
+<h1>MaxWeb Login - Implementation Guide</h1>
 <p>Call the RESTful API POST endpoint /initiate with a JSON object containing the properties described below to generate a login link for each affiliate. You will receive a JSON object in the response containing a timestamp, and a login URL which you can present to the affiliates.</p>
 <p><strong>HTTP Request Method:</strong> <code>POST</code><br>
 <strong>REST URL</strong>: <code>https://backoffice.maxweb.com/clickcrm-login/initiate</code><br>
