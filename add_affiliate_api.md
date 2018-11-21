@@ -3,7 +3,7 @@
 <p>Note: If you’re using ClickCRM default affiliate signup page – there is no need to call this API. Its designed to be used in cases where the affiliate is created outside of the ClickCRM system</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addaffiliate</code><br></p>
-<p><strong>Parameters</strong>
+<p><strong>Parameters</strong><br>
 <strong>Required items appear in bold type.</strong></p>
 <table>
 <thead>
@@ -71,5 +71,6 @@
 </tr>
 </tbody>
 </table>
+<br>
 <p><strong>Example</strong></p>
 <p><code>https://secure.clickcrm.com/v2/addaffiliate?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&name=John+Doe&emailaddress=john_doe%40mydomain.com</code><br>
