@@ -1,6 +1,6 @@
 <h1>Add Refund API - Implementation Guide</h1><br>
 <p>The “Add Refund” API should be triggered every time a transaction must be marked as refunded in the system.</p>
-<p>Note: Note: If you are using ClickCRM checkout and process refunds from the Admin, there is no need to call this API. It’s designed to be used in cases where charges are processed outside of the clickCRM system.</p>
+<p>Note: If you are using ClickCRM checkout and process refunds from the Admin, there is no need to call this API. It’s designed to be used in cases where charges are processed outside of the clickCRM system.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addrefund</code><br></p>
 <p><strong>Parameters</strong><br>
