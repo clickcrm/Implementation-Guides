@@ -97,9 +97,7 @@ ClickCRM_DoCheckout(htmlFormID, callbackFunction);
 </tr>
 </tbody>
 </table>
-<p>callbackFunction<p>
-<p> JSON object containing the information described below.</p>
-<p><strong>Required items appear in bold type.</strong></p>
+<p>The <b>callbackFunction</b> receives a Javascript object parameter containing the information described below.<p>
 <table>
 <thead>
 <tr>
@@ -110,24 +108,20 @@ ClickCRM_DoCheckout(htmlFormID, callbackFunction);
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>timestamp</strong></td>
-<td align="left">Number</td>
-<td align="left">Timestamp (UTC) in Unix format</td>
-</tr>
-<tr>
-<td align="left"><strong>result</strong></td>
+<td align="left">result</td>
 <td align="left">Number</td>
 <td align="left"><strong>1</strong> on success. <strong>0</strong> on failure</td>
 </tr>
 <tr>
-<td align="left"><strong>redirect_url</strong></td>
-<td align="left">String</td>
-<td align="left">Affiliate login URL</td>
-</tr>
-  <tr>
 <td align="left">result_str</td>
 <td align="left">String</td>
 <td align="left">Contains an error message on failure due to validation errors</td>
 </tr>
 </tbody>
 </table>
+<p>Example of using an anonymous callback function for displaying in the console the checkout call result</p>
+<pre>
+<code>
+ClickCRM_DoCheckout('orderform', function(response) { console.log(response); });
+</code>
+</pre>
