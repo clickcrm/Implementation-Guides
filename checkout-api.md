@@ -17,7 +17,6 @@
 <p><b>checkout-init.php</b></p>
 <pre>
 <code>
-<?php
 define('ACCOUNT_ID', 5396);
 define('API_KEY', 'ad64dasd112353813e180e72d10635295e7c151');
 header("Content-Type: application/json; charset=utf-8");
@@ -68,6 +67,5 @@ function GetCheckoutToken()
 }
 $response = array('token' => GetCheckoutToken(), 'a' => ACCOUNT_ID);
 echo json_encode($response);
-?>
 </code>
 </pre>
