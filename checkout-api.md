@@ -69,3 +69,65 @@ $response = array('token' => GetCheckoutToken(), 'a' => ACCOUNT_ID);
 echo json_encode($response);
 </code>
 </pre>
+<p><strong>3. Add the checkout call code on your form submit button's click event handler or whereever it suits best for you.</strong></p>
+<pre>
+<code>
+ClickCRM_DoCheckout(htmlFormID, callbackFunction);
+</code>
+</pre>
+<p><b>ClickCRM_DoCheckout</b> requires 2 parameters that are described below.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">htmlFormID</td>
+<td align="left">String</td>
+<td align="left">The ID of the html checkout form</td>
+</tr>
+<tr>
+<td align="left">callbackFunction</td>
+<td align="left">Function</td>
+<td align="left">User defined callback function that will be automatically called when the checkout call is completed.</td>
+</tr>
+</tbody>
+</table>
+<p>callbackFunction<p>
+<p> JSON object containing the information described below.</p>
+<p><strong>Required items appear in bold type.</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>timestamp</strong></td>
+<td align="left">Number</td>
+<td align="left">Timestamp (UTC) in Unix format</td>
+</tr>
+<tr>
+<td align="left"><strong>result</strong></td>
+<td align="left">Number</td>
+<td align="left"><strong>1</strong> on success. <strong>0</strong> on failure</td>
+</tr>
+<tr>
+<td align="left"><strong>redirect_url</strong></td>
+<td align="left">String</td>
+<td align="left">Affiliate login URL</td>
+</tr>
+  <tr>
+<td align="left">result_str</td>
+<td align="left">String</td>
+<td align="left">Contains an error message on failure due to validation errors</td>
+</tr>
+</tbody>
+</table>
