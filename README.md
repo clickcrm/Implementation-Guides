@@ -34,5 +34,5 @@ The implementation guides below will assist you with integrating ClickCRM.
 <h2>Checkout API</h2>
 <p>ClickCRM customers can take their <b>Sales Funnel</b> customization to the next level by designing their own checkout pages hosted on their own domains. 
 <ul>
-  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/checkout-implementation.md">Implementation Guide</a>
+  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/checkout-api.md">Implementation Guide</a>
 </ul>
