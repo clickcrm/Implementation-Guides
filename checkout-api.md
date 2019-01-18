@@ -14,9 +14,9 @@
 </tr>
 </thead>
 </table>
+<p><b>checkout-init.php</b></p>
 <pre>
 <code>
-<p><b>checkout-init.php</b></p>
 <?php
 define('ACCOUNT_ID', 5396);
 define('API_KEY', 'ad64dasd112353813e180e72d10635295e7c151');
