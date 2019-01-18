@@ -20,20 +20,16 @@
 <?php
 define('ACCOUNT_ID', 5396);
 define('API_KEY', 'ad64dasd112353813e180e72d10635295e7c151');
-
 header("Content-Type: application/json; charset=utf-8");
-
 function GetCheckoutToken()
 {
     $checkoutToken  = '';
-    
     do
     {
         if (empty($_COOKIE['sessid2']))
         {
             break;
         }
-
         // Build the data array to be submitted
         $data = array(
             'a' => ACCOUNT_ID,
@@ -41,48 +37,36 @@ function GetCheckoutToken()
             'sess_id' => $_COOKIE['sessid2'],
             'order_total' => 100
         );
-     
         // Prepare the cURL request
         $ch = curl_init('https://secure.clickcrm.com/v2/generate_token');
-
         // Set cURL options for POST request
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLINFO_HEADER_OUT, true);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-         
         // Submit the POST request
         $result = curl_exec($ch);
-
         if ($result === false)
         {
             // Do some general error handling here
             // echo 'Curl error: ' . curl_error($ch);
             break;
         }
-
         $info = curl_getinfo($ch);
-
         $decodedData = json_decode($result, true);
-
         if (empty($decodedData['result']))
         {
             // Authentication error. A description of the error can be found in $decodedData['result_str']
             break;
         }
-
         $checkoutToken = $decodedData['data']['token'];
 
         // Close cURL session handle
         curl_close($ch);
-
     } while (false);
-
     return $checkoutToken;
 }
-
 $response = array('token' => GetCheckoutToken(), 'a' => ACCOUNT_ID);
-
 echo json_encode($response);
 ?>
 </code>
