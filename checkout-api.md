@@ -1,5 +1,5 @@
 <h1>Checkout API - Implementation Guide</h1><br>
-<h2>1. Create the checkout form<h2>
+<h2>1. Create the checkout form</h2>
 <p>Build your custom html checkout form on your page and make sure to define the below listed elements.</p>
     <p><strong>Required items appear in bold type.</strong></p>
 <table>
