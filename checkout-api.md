@@ -1,10 +1,30 @@
 <h1>Checkout API - Implementation Guide</h1><br>
-<p><strong>1. Include the following Javascript code on your checkout page:</strong><br></p>
+<p><strong>1. Build your custom html checkout form and make sure to define the below listed elements. </strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">htmlFormID</td>
+<td align="left">The ID of the html checkout form</td>
+</tr>
+<tr>
+<td align="left">callbackFunction</td>
+<td align="left">Function</td>
+<td align="left">User defined callback function that will be automatically called when the checkout call is completed.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Include the following Javascript code on your checkout page:</strong><br></p>
 
 <code><script type="text/javascript">var ClickCRM_DoCheckout=function(){var s,r,i="",a="",t=0,n={result:0,result_str:"Oops! Something went wrong. Please try again"};function o(e){var t=Object.assign({},n);e&&(c("Error handling..."),c(e),t.error_details=e),r&&r(t)}function c(e){1===t&&console.log(e)}function u(e){var t;try{t=JSON.parse(this.responseText),r(t)}catch(e){o(e)}}function p(e){o(e)}function d(e){o(e)}function h(e){0<e.status||function(e){var t;try{(t=new XMLHttpRequest).submittedData=e,t.addEventListener("load",u),t.addEventListener("error",p),t.addEventListener("abort",d),t.open("post",e.receiver,!0),t.setRequestHeader("Content-Type",e.contentType),t.send(e.segments.join("&"))}catch(e){o(e)}}(e)}function f(e){var t,n,s;this.contentType="application/x-www-form-urlencoded",this.receiver="https://secure.clickcrm.com/v2/docheckout",this.status=0,this.segments=["a="+a,"t="+i];for(var r=escape,o=0;o<e.elements.length;o++)if((s=e.elements[o]).hasAttribute("name"))if("FILE"===(n="INPUT"===s.nodeName.toUpperCase()?s.getAttribute("type").toUpperCase():"TEXT")&&0<s.files.length)for(t=0;t<s.files.length;this.segments.push(r(s.name)+"="+r(s.files[t++].name)));else("RADIO"!==n&&"CHECKBOX"!==n||s.checked)&&this.segments.push(r(s.name)+"="+r(s.value));i="",h(this)}function l(n){var e;try{(e=new XMLHttpRequest).addEventListener("load",function(e){var t;try{t=JSON.parse(this.responseText),i=t.token,a=t.a,"function"==typeof n&&n()}catch(e){"function"==typeof n&&o(e)}}),e.addEventListener("error",p),e.addEventListener("abort",d),e.open("GET","checkout-init.php"),e.send()}catch(e){o(e)}}function v(e){c("FORM: "+s),c("CHECKOUT: "+i),new f(s)}return l(),function(e,t){var n;s=document.getElementById(e),r=t,n=v,""!==i?(c("USING EXISTING TOKEN"),n()):(c("GETTING NEW TOKEN"),l(n))}}();</script>
 </code>
 
-<p><strong>2. Create a new PHP script <i>checkout-init.php</i> under the same folder as your checkout page and paste the code below.</strong><br></p>
+<p><strong>3. Create a new PHP script <i>checkout-init.php</i> under the same folder as your checkout page and paste the code below.</strong><br></p>
 <p>You will need to replace the <b>ACCOUNT_ID</b> and <b>API_KEY</b> with the ones belonging to your ClickCRM account. You can view and manage your API secret in your ClickCRM account under Profile->API Credentials</strong>.
 <br></p>
 <table>
@@ -69,7 +89,7 @@ $response = array('token' => GetCheckoutToken(), 'a' => ACCOUNT_ID);
 echo json_encode($response);
 </code>
 </pre>
-<p><strong>3. Add the checkout call code on your form submit button's click event handler or whereever it suits best for you.</strong></p>
+<p><strong>4. Add the checkout call code on your form submit button's click event handler or whereever it suits best for you.</strong></p>
 <pre>
 <code>
 ClickCRM_DoCheckout(htmlFormID, callbackFunction);
@@ -116,6 +136,11 @@ ClickCRM_DoCheckout(htmlFormID, callbackFunction);
 <td align="left">result_str</td>
 <td align="left">String</td>
 <td align="left">Contains an error message on failure due to validation errors</td>
+</tr>
+<tr>
+<td align="left">error_details</td>
+<td align="left">Object</td>
+<td align="left">Technical details on the error</td>
 </tr>
 </tbody>
 </table>
