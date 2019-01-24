@@ -11,10 +11,97 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">htmlFormID</td>
-<td align="left">The ID of the html checkout form</td>
+<td align="left">salespage_url</td>
+<td align="left"></td>
 </tr>
-</tbody>
+<tr>
+<td align="left">product_codename</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">salestax_amount</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_country</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_address</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">address_street</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">street_number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_city</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_state</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_zip</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">emailaddress</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_name</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">document_number</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">phone</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_cardnumber</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_month</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_year</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">creditcards_ccv</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">addresses_address</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">addresses_city</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">addresses_country</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">addresses_state</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">addresses_zip</td>
+<td align="left"></td>
+</tr></tbody>
 </table>
 <h2>2. Include ClickCRM Javascript snippet</h2>
 <p>Include the following Javascript code on your checkout page:<br></p>
