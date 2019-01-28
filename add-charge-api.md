@@ -1,6 +1,6 @@
 <h1>Add Charge API - Implementation Guide</h1><br>
 <p>The “Add Charge” API should be triggered every time a new order or a recurring charge is processed by your shopping cart.</p>
-<p>Note: Note: If you’re using ClickCRM checkout pages – there is no need to call this API. Its designed to be used in cases where charges are processed outside of the ClickCRM system.</p>
+<p>Note: If you’re using ClickCRM checkout pages – there is no need to call this API. Its designed to be used in cases where charges are processed outside of the ClickCRM system.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addcharge</code><br></p>
 <p><strong>Parameters</strong><br>
