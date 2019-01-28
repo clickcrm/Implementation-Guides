@@ -30,4 +30,24 @@ Required items appear in bold type.</p>
 <p><strong>Example</strong></p>
 <p><code>http://secure.clickcrm.com/v2/get_affiliate_links?a=5336&api_key=d1beb3c4970324d9acfbb0140093828f&emailaddress=manager@convertcoldmedia.com</code><br>
 
+<p>The JSON response looks like this:</p>
+<i>
+{  
+ "result":1,
+ "result_str":"Successfully retrieved affiliate offer links",
+ "data":{  
+    "offers":[
+       {
+          "name":"Offer 1",
+          "link":"Link 1"
+       },
+       {
+          "name":"Offer 2",
+          "link":"Link 2"
+       }
+    ],
+    "message":"Successfully retrieved affiliate offer links"
+ }
+} 
+</i>
 <p>Note: In order to get a functional URL, the link in the API response must be decoded (urldecode).</p>
