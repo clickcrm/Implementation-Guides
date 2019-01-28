@@ -28,7 +28,6 @@ Required items appear in bold type.</p>
 <td align="left">String</td>
 <td align="left">Affiliate email address</td>
 </tr>
-<tr>
 </tbody>
 </table>
 <br>
