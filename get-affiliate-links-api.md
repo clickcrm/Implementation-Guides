@@ -33,21 +33,23 @@ Required items appear in bold type.</p>
 <p>The JSON response looks like this:</p>
 <i>
 {  
- "result":1,
- "result_str":"Successfully retrieved affiliate offer links",
- "data":{  
-    "offers":[
-       {
-          "name":"Offer 1",
-          "link":"Link 1"
-       },
-       {
-          "name":"Offer 2",
-          "link":"Link 2"
-       }
-    ],
-    "message":"Successfully retrieved affiliate offer links"
- }
-} 
+   "result":1,
+   "result_str":"Successfully retrieved affiliate offer links",
+   "data":{  
+      "offers":[  
+         {  
+            "name":"Offer 1",
+            "link":"Link 1"
+         },
+         {  
+            "name":"Offer 2",
+            "link":"Link 2"
+         }
+      ],
+      "message":"Successfully retrieved affiliate offer links"
+   }
+}
+
 </i>
+<br>
 <p>Note: In order to get a functional URL, the link in the API response must be decoded (urldecode).</p>
