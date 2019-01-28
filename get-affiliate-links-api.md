@@ -1,5 +1,5 @@
 <h1>Get Affiliate Links API - Implementation Guide</h1><br>
-<p>The “Get Affiliate Links” API should be triggered to read the offer links for a specific affiliate.</p>
+<p>The “Get Affiliate Links” API should be triggered to get the offer links for a specific affiliate.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/get_affiliate_links</code><br></p>
 <p><strong>Parameters</strong><br>
