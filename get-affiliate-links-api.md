@@ -42,11 +42,11 @@ Required items appear in bold type.</p>
    "data":{  
       "offers":[  
          {  
-            "name":"Offer 1",
+            "name":"Power Efficiency Guide",
             "link":"Link 1"
          },
          {  
-            "name":"Offer 2",
+            "name":"The Two Weeks Diet",
             "link":"Link 2"
          }
       ],
