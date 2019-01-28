@@ -36,3 +36,9 @@ The implementation guides below will assist you with integrating ClickCRM.
 <ul>
   <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/checkout-api.md">Implementation Guide</a>
 </ul>
+
+<h2>Get Affiliate Links API</h2>
+<p>The API should be triggered to read the set of links for an affiliate.</p>
+<ul>
+  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/get-affiliate-links-api.md">Implementation Guide</a>
+</ul>
