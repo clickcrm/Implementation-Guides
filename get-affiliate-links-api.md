@@ -19,6 +19,11 @@ Required items appear in bold type.</p>
 <td align="left">Your clickCRM account ID</td>
 </tr>
 <tr>
+<td align="left"><strong>api_key</strong></td>
+<td align="left">String</td>
+<td align="left">API key provided with your account credentials</td>
+</tr>
+<tr>
 <td align="left"><strong>emailaddress</strong></td>
 <td align="left">String</td>
 <td align="left">Affiliate email address</td>
@@ -51,4 +56,4 @@ Required items appear in bold type.</p>
 }
 </code></pre>
 <br>
-<p><strong>Note:</strong> In order to get a functional URL, the link in the API response must be decoded (urldecode).</p>
+<p>Note: In order to get a functional URL, the link in the API response must be decoded (urldecode).</p>
