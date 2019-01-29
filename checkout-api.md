@@ -31,7 +31,7 @@
 <td align="left">Billing address: country</td>
 </tr>
 <tr>
-<td align="left">creditcards_state</td>
+<td align="left"><b>creditcards_state</b></td>
 <td align="left">Billing address: state</td>
 </tr>
 <tr>
