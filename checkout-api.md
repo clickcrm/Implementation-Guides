@@ -11,97 +11,82 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">salespage_url</td>
-<td align="left"></td>
+<td align="left"><b>product_codename<b></td>
+<td align="left">ClickCRM product's codename</td>
 </tr>
 <tr>
-<td align="left">product_codename</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">salestax_amount</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">creditcards_country</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">creditcards_address</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">address_street</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">street_number</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">creditcards_city</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">creditcards_state</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">creditcards_zip</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">emailaddress</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">creditcards_name</td>
-<td align="left"></td>
+<td align="left"><b>emailaddress</b></td>
+<td align="left">Customer's email address</td>
 </tr>
 <tr>
 <td align="left">document_number</td>
-<td align="left"></td>
+<td align="left">Customer's identity card number</td>
 </tr>
 <tr>
 <td align="left">phone</td>
-<td align="left"></td>
+<td align="left">Customer's phone number</td>
 </tr>
 <tr>
-<td align="left">creditcards_cardnumber</td>
-<td align="left"></td>
+<td align="left"><b>creditcards_country</b></td>
+<td align="left">Billing address: country</td>
 </tr>
 <tr>
-<td align="left">creditcards_month</td>
-<td align="left"></td>
+<td align="left">creditcards_state</td>
+<td align="left">Billing address: state</td>
 </tr>
 <tr>
-<td align="left">creditcards_year</td>
-<td align="left"></td>
+<td align="left">creditcards_city</td>
+<td align="left">Billing address: city</td>
 </tr>
 <tr>
-<td align="left">creditcards_ccv</td>
-<td align="left"></td>
+<td align="left"><b>creditcards_zip</b></td>
+<td align="left">Billing address: zip code</td>
 </tr>
 <tr>
-<td align="left">addresses_address</td>
-<td align="left"></td>
+<td align="left">creditcards_address</td>
+<td align="left">Billing address: street and no.</td>
 </tr>
 <tr>
-<td align="left">addresses_city</td>
-<td align="left"></td>
+<td align="left"><b>creditcards_name<b></td>
+<td align="left">Card holder's name</td>
 </tr>
 <tr>
-<td align="left">addresses_country</td>
-<td align="left"></td>
+<td align="left"><b>creditcards_cardnumber</b></td>
+<td align="left">Debit/credit card number</td>
 </tr>
 <tr>
-<td align="left">addresses_state</td>
-<td align="left"></td>
+<td align="left"><b>creditcards_month</b></td>
+<td align="left">Card expiration month</td>
 </tr>
 <tr>
-<td align="left">addresses_zip</td>
-<td align="left"></td>
-</tr></tbody>
+<td align="left"><b>creditcards_year</b></td>
+<td align="left">Card expiration year</td>
+</tr>
+<tr>
+<td align="left"><b>creditcards_ccv</b></td>
+<td align="left">Card CVV</td>
+</tr>
+<tr>
+<td align="left"><b>addresses_address</b></td>
+<td align="left">Shipping address(only for physical products)</td>
+</tr>
+<tr>
+<td align="left"><b>addresses_country</b></td>
+<td align="left">Shipping address: country(only for physical products)</td>
+</tr>
+<tr>
+<td align="left"><b>addresses_state</b></td>
+<td align="left">Shipping address: state(only for physical products)</td>
+</tr>
+<tr>
+<td align="left"><b>addresses_city</b></td>
+<td align="left">Shipping address: city(only for physical products)</td>
+</tr>
+<tr>
+<td align="left"><b>addresses_zip</b></td>
+<td align="left">Shipping address: zip code(only for physical products)</td>
+</tr>
+</tbody>
 </table>
 <h2>2. Include ClickCRM Javascript snippet</h2>
 <p>Include the following Javascript code on your checkout page:<br></p>
