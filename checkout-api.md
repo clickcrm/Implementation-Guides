@@ -88,10 +88,10 @@
 </tr>
 </tbody>
 </table>
-<h2>2. Include ClickCRM Javascript snippet</h2>
+<h2>2. Include the ClickCRM API Wrapper</h2>
 <p>Include the following Javascript code on your checkout page:<br></p>
 
-<code><script type="text/javascript">var ClickCRM_DoCheckout=function(){var s,r,i="",a="",t=0,n={result:0,result_str:"Oops! Something went wrong. Please try again"};function o(e){var t=Object.assign({},n);e&&(c("Error handling..."),c(e),t.error_details=e),r&&r(t)}function c(e){1===t&&console.log(e)}function u(e){var t;try{t=JSON.parse(this.responseText),r(t)}catch(e){o(e)}}function p(e){o(e)}function d(e){o(e)}function h(e){0<e.status||function(e){var t;try{(t=new XMLHttpRequest).submittedData=e,t.addEventListener("load",u),t.addEventListener("error",p),t.addEventListener("abort",d),t.open("post",e.receiver,!0),t.setRequestHeader("Content-Type",e.contentType),t.send(e.segments.join("&"))}catch(e){o(e)}}(e)}function f(e){var t,n,s;this.contentType="application/x-www-form-urlencoded",this.receiver="https://secure.clickcrm.com/v2/docheckout",this.status=0,this.segments=["a="+a,"t="+i];for(var r=escape,o=0;o<e.elements.length;o++)if((s=e.elements[o]).hasAttribute("name"))if("FILE"===(n="INPUT"===s.nodeName.toUpperCase()?s.getAttribute("type").toUpperCase():"TEXT")&&0<s.files.length)for(t=0;t<s.files.length;this.segments.push(r(s.name)+"="+r(s.files[t++].name)));else("RADIO"!==n&&"CHECKBOX"!==n||s.checked)&&this.segments.push(r(s.name)+"="+r(s.value));i="",h(this)}function l(n){var e;try{(e=new XMLHttpRequest).addEventListener("load",function(e){var t;try{t=JSON.parse(this.responseText),i=t.token,a=t.a,"function"==typeof n&&n()}catch(e){"function"==typeof n&&o(e)}}),e.addEventListener("error",p),e.addEventListener("abort",d),e.open("GET","checkout-init.php"),e.send()}catch(e){o(e)}}function v(e){c("FORM: "+s),c("CHECKOUT: "+i),new f(s)}return l(),function(e,t){var n;s=document.getElementById(e),r=t,n=v,""!==i?(c("USING EXISTING TOKEN"),n()):(c("GETTING NEW TOKEN"),l(n))}}();</script>
+<code><script type="text/javascript" src="https://cdn.softwareprojects.com/classes/ClickCRM_API_Wrapper/v1/clickcrm-api-wrapper.min.js"></script>
 </code>
 <h2>3. Add ClickCRM dependency script</h2>
 <p>Create a new PHP script <i>checkout-init.php</i> under the same folder as your checkout page and paste the code below.</strong></p>
@@ -108,62 +108,123 @@
 <pre>
 <code>
 define('ACCOUNT_ID', 5396);
-define('API_KEY', 'ad64dasd112353813e180e72d10635295e7c151');
+define('API_KEY', 'THISISYOURSECRETAPIKEY');
+define('SESS_ID', $_COOKIE['sessid2']);
+
 header("Content-Type: application/json; charset=utf-8");
+
 function GetCheckoutToken()
 {
     $checkoutToken  = '';
+    
     do
     {
-        if (empty($_COOKIE['sessid2']))
+        if (empty(SESS_ID))
         {
             break;
         }
+
         // Build the data array to be submitted
         $data = array(
             'a' => ACCOUNT_ID,
             'api_key' => API_KEY,
-            'sess_id' => $_COOKIE['sessid2'],
+            'sess_id' => SESS_ID,
             'order_total' => 100
         );
+     
         // Prepare the cURL request
         $ch = curl_init('https://secure.clickcrm.com/v2/generate_token');
+
         // Set cURL options for POST request
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLINFO_HEADER_OUT, true);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+         
         // Submit the POST request
         $result = curl_exec($ch);
+
         if ($result === false)
         {
             // Do some general error handling here
             // echo 'Curl error: ' . curl_error($ch);
             break;
         }
+
         $info = curl_getinfo($ch);
+
         $decodedData = json_decode($result, true);
+
         if (empty($decodedData['result']))
         {
             // Authentication error. A description of the error can be found in $decodedData['result_str']
             break;
         }
+
         $checkoutToken = $decodedData['data']['token'];
 
         // Close cURL session handle
         curl_close($ch);
+
     } while (false);
+
     return $checkoutToken;
 }
-$response = array('token' => GetCheckoutToken(), 'a' => ACCOUNT_ID);
+
+$response = array('token' => GetCheckoutToken(), 'a' => ACCOUNT_ID, 's' => SESS_ID);
+
 echo json_encode($response);
 </code>
 </pre>
-<h2>4. Do the checkout call</h2>
+<h2>4. Initialize the ClickCRM API Wrapper on document ready</h2>
 <p>Add the checkout call code on your form submit button's click event handler or whereever it suits best for you.</p>
 <pre>
 <code>
-ClickCRM_DoCheckout(htmlFormID, callbackFunction);
+<script type="text/javascript">
+
+// using jQuery as a helper for this example
+//
+$(document).ready(function()
+{
+	// Initialize ClickCRM API Wrapper
+	//
+	var _clickCRM = new ClickCRM_API_Wrapper(
+	{
+		// The id of the html checkout form
+		//
+		formID: 'checkout-form',
+		
+		// A callback function that can be used for displaying the taxes to the user
+		//
+		// ClickCRM performs an automatic tax calculation based on the country, state and zip code inputed by the user
+		//
+		salesTaxesChangedCallback: function(response) 
+		{
+			$('#taxes-to-the-user').text(response.result);
+		}
+	});	
+
+	// Handle form submit
+	//
+	$('#checkout-form').on('submit', function()
+	{
+		// You can do some custom JS processing here
+
+		// Do the checkout call
+		//
+		_clickCRM.checkout(function(response)
+		{
+			// response.result will be 0 if the checkout call didn't complete due to a validation error
+			//
+			if (response.result == 0)
+			{
+				alert('Oops! The checkout call returned the following error: ' + response.result_str);
+			}
+		});
+	});
+});
+
+</script>
 </code>
 </pre>
 <p><b>ClickCRM_DoCheckout</b> requires 2 parameters that are described below.</p>
