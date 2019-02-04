@@ -205,7 +205,7 @@ echo json_encode($response);
 </tr>
 </tbody>
 </table>
-<p>See the below example where we use jQuery lubrary as helper for this purpose.</p>
+<p>See the below example where we use jQuery library as helper for this purpose.</p>
 <pre>
 <code>
 <script type="text/javascript">
@@ -241,11 +241,29 @@ $(document).ready(function()
 <tr>
 <td align="left">initializeStateSelector</td>
 <td align="left">Function</td>
-<td align="left">If we decided to create a new select element containing the states for the current country each time the user changes the country, we need to call this function after creating the new states element so that ClickCRM is aware of the new element and can take it into consideration when calculation taxes.</td>
+<td align="left">If we decided to recreate the states element each time the user changes the country, we need to call this function after creating the new states element so that ClickCRM is aware of the new element and can take it into consideration when calculation taxes.</td>
 </tr>
 </tbody>
 </table>
-<p>The <b>callbackFunction</b> receives a Javascript object parameter containing the information described below.<p>
+<h2>5. Do the Checkout call</h2>
+<p>Place the checkout call where it suits you best. In the example below, we added it within the form submit event handler.</p>
+<pre>
+<code>
+<script type="text/javascript">
+$('#checkout-form').on('submit', function()
+{
+	_clickCRM.checkout(function(response)
+	{
+		if (response.result == 0)
+		{
+			alert('Oops! The checkout call returned the following error: ' + response.result_str);
+		}
+	});
+});
+</script>
+</code>
+</pre>
+<p>The caller will be notified on the status of the request via a callback function that can be passed as parameter to checkout. If defined, the callback function receives a Javascript object parameter containing the information described below.<p>
 <table>
 <thead>
 <tr>
@@ -272,9 +290,3 @@ $(document).ready(function()
 </tr>
 </tbody>
 </table>
-<p>Example of using an anonymous callback function for displaying in the console the checkout call result</p>
-<pre>
-<code>
-ClickCRM_DoCheckout('orderform', function(response) { console.log(response); });
-</code>
-</pre>
