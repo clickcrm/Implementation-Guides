@@ -223,7 +223,7 @@ $(document).ready(function()
 </script>
 </code>
 </pre>
-<p>The object resulted from the ClickCRM API Wrapper initialization consits of the following methods:</p>
+<p>The object resulted from the ClickCRM API Wrapper initialization has the following methods:</p>
 <table>
 <thead>
 <tr>
