@@ -241,7 +241,7 @@ $(document).ready(function()
 <tr>
 <td align="left">initializeStateSelector</td>
 <td align="left">Function</td>
-<td align="left">If we decided to recreate the states element each time the user changes the country, we need to call this function after creating the new states element so that ClickCRM is aware of the new element and can take it into consideration when calculation taxes.</td>
+<td align="left">If we decided to recreate the states element each time the user changes the country, we need to call this function after creating the new states element so that ClickCRM is aware of the new element and can take it into consideration when calculating taxes.</td>
 </tr>
 </tbody>
 </table>
