@@ -176,7 +176,35 @@ $response = array('token' => GetCheckoutToken(), 'a' => ACCOUNT_ID, 's' => SESS_
 echo json_encode($response);
 </code>
 </pre>
-<h2>4. Initialize the ClickCRM API Wrapper on document ready</h2>
+<h2>4. Initialize the ClickCRM API Wrapper</h2>
+<p>You will need to pass the following parameters on initialization(required items appear in bold)</p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td align="left"><b>formID</b></td>
+<td align="left">String</td>
+<td align="left">The ID of the html checkout form</td>
+</tr>
+<tr>
+<td align="left"><b>debug</b></td>
+<td align="left">Boolean</td>
+<td align="left">When enabled, debugging messages are displayed in browser's console. Useful when initialization fails due to missing required elements in the checkout form. Defaults to false</td>
+</tr>
+<tr>
+<td align="left">salesTaxesChanged</td>
+<td align="left">Function</td>
+<td align="left">ClickCRM performs an automatic tax calculation based on the country, state and zip code inputed by the user. This is a callback function that can be used for displaying the taxes amount to the user in a custom way.
+</td>
+</tr>
+</tbody>
+</table>
 <p>Add the checkout call code on your form submit button's click event handler or whereever it suits best for you.</p>
 <pre>
 <code>
