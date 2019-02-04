@@ -205,57 +205,25 @@ echo json_encode($response);
 </tr>
 </tbody>
 </table>
-<p>Add the checkout call code on your form submit button's click event handler or whereever it suits best for you.</p>
+<p>See the below example where we use jQuery lubrary as helper for this purpose.</p>
 <pre>
 <code>
 <script type="text/javascript">
-
-// using jQuery as a helper for this example
-//
 $(document).ready(function()
 {
-	// Initialize ClickCRM API Wrapper
-	//
 	var _clickCRM = new ClickCRM_API_Wrapper(
 	{
-		// The id of the html checkout form
-		//
 		formID: 'checkout-form',
-		
-		// A callback function that can be used for displaying the taxes to the user
-		//
-		// ClickCRM performs an automatic tax calculation based on the country, state and zip code inputed by the user
-		//
 		salesTaxesChangedCallback: function(response) 
 		{
 			$('#taxes-to-the-user').text(response.result);
 		}
 	});	
-
-	// Handle form submit
-	//
-	$('#checkout-form').on('submit', function()
-	{
-		// You can do some custom JS processing here
-
-		// Do the checkout call
-		//
-		_clickCRM.checkout(function(response)
-		{
-			// response.result will be 0 if the checkout call didn't complete due to a validation error
-			//
-			if (response.result == 0)
-			{
-				alert('Oops! The checkout call returned the following error: ' + response.result_str);
-			}
-		});
-	});
 });
-
 </script>
 </code>
 </pre>
-<p><b>ClickCRM_DoCheckout</b> requires 2 parameters that are described below.</p>
+<p>The object resulted from the ClickCRM API Wrapper initialization consits of the following methods:</p>
 <table>
 <thead>
 <tr>
@@ -266,14 +234,14 @@ $(document).ready(function()
 </thead>
 <tbody>
 <tr>
-<td align="left">htmlFormID</td>
-<td align="left">String</td>
-<td align="left">The ID of the html checkout form</td>
+<td align="left">checkout</td>
+<td align="left">Function</td>
+<td align="left">The function that serializes the checkout form and sends the data to ClickCRM for processing. ClickCRM will reply with the result of the checkout operation</td>
 </tr>
 <tr>
-<td align="left">callbackFunction</td>
+<td align="left">initializeStateSelector</td>
 <td align="left">Function</td>
-<td align="left">User defined callback function that will be automatically called when the checkout call is completed.</td>
+<td align="left">If we decided to create a new select element containing the states for the current country each time the user changes the country, we need to call this function after creating the new states element so that ClickCRM is aware of the new element and can take it into consideration when calculation taxes.</td>
 </tr>
 </tbody>
 </table>
