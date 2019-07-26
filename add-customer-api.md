@@ -35,32 +35,32 @@ Required items appear in bold type.</p>
 </tr>
 <td align="left">address</td>
 <td align="left">String</td>
-<td align="left">Customer Address</td>
+<td align="left">Billing Address</td>
 </tr>
 <tr>
 <td align="left">city</td>
 <td align="left">String</td>
-<td align="left">Customer City</td>
+<td align="left">Billingr City</td>
 </tr>
 <tr>
 <td align="left">state</td>
 <td align="left">String</td>
-<td align="left">Customer State</td>
+<td align="left">Billing State</td>
 </tr>
 <tr>
 <td align="left">zip</td>
 <td align="left">String</td>
-<td align="left">Customer Zip</td>
+<td align="left">Billing Zip</td>
 </tr>
 <tr>
 <td align="left">country</td>
 <td align="left">String</td>
-<td align="left">Customer Country</td>
+<td align="left">Billing Country</td>
 </tr>
 <tr>
 <td align="left">phone</td>
 <td align="left">String</td>
-<td align="left">Customer Phone</td>
+<td align="left">Billing Phone</td>
 </tr>
 <tr>
 <td align="left">ipaddress</td>
