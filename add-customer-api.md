@@ -81,7 +81,72 @@ Required items appear in bold type.</p>
 <td align="left">subid</td>
 <td align="left">String</td>
 <td align="left">Customer Additional Identifier</td>
-</tr>   
+</tr>
+<tr>
+<td align="left">flag_validate_card</td>
+<td align="left">Numeric</td>
+<td align="left">Set it to 1 to store the credit card details</td>
+</tr>
+<tr>
+<td align="left">flag_validate_card</td>
+<td align="left">Numeric</td>
+<td align="left">Set it to 1 to store the credit card details</td>
+</tr>  
+<tr>
+<td align="left">card_number</td>
+<td align="left">String</td>
+<td align="left">Card Number</td>
+</tr>  
+<tr>
+<td align="left">card_month</td>
+<td align="left">String</td>
+<td align="left">Card Expiration Month</td>
+</tr>
+<tr>
+<td align="left">card_year</td>
+<td align="left">String</td>
+<td align="left">Card Expiration Year</td>
+</tr>
+ <tr>
+<td align="left">card_ccv</td>
+<td align="left">String</td>
+<td align="left">Card CCV</td>
+</tr> 
+ <tr>
+<td align="left">card_ccv</td>
+<td align="left">String</td>
+<td align="left">Card CCV</td>
+</tr>
+<tr>
+<td align="left">shp_name</td>
+<td align="left">String</td>
+<td align="left">Shipping Name</td>
+</tr>
+<tr>
+<td align="left">shp_address</td>
+<td align="left">String</td>
+<td align="left">Shipping Address</td>
+</tr>
+<tr>
+<td align="left">shp_city</td>
+<td align="left">String</td>
+<td align="left">Shipping City</td>
+</tr>  
+<tr>
+<td align="left">shp_state</td>
+<td align="left">String</td>
+<td align="left">Shipping State</td>
+</tr>
+<tr>
+<td align="left">shp_zip</td>
+<td align="left">String</td>
+<td align="left">Shipping Zip</td>
+</tr>
+<tr>
+<td align="left">shp_country</td>
+<td align="left">String</td>
+<td align="left">Shipping Country</td>
+</tr>  
 </tbody>
 </table>
 <br>
