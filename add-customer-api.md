@@ -145,4 +145,4 @@ Required items appear in bold type.</p>
   
 <p>Note: If the Shipping details are not provided, the Billing details will be used for Shipping.</p>
 
-<p><b>The API outputs</b> a Result string (Success or Error) and <b>the new added Customer ID</b> (on Success). If the customer record already exists in the ClickCRM system, the existing customer's ID will be outputted. You will have to provide the Customer ID when calling the Add To Cart and Complete Purchase APIs.
+<p><b>The API outputs</b> a Result string (Success or Error) and <b>the new added Customer ID</b> (on Success). If the customer record already exists in the ClickCRM system, the existing customer's ID will be outputted. You will have to provide the Customer ID when calling the AddToCart and CompletePurchase APIs.
