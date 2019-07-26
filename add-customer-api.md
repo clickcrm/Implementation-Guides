@@ -115,27 +115,27 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left">shp_address</td>
 <td align="left">String</td>
-<td align="left">Shipping Address</td>
+<td align="left">Shipping Address (only for physical products)</td>
 </tr>
 <tr>
 <td align="left">shp_city</td>
 <td align="left">String</td>
-<td align="left">Shipping City</td>
+<td align="left">Shipping City (only for physical products)</td>
 </tr>  
 <tr>
 <td align="left">shp_state</td>
 <td align="left">String</td>
-<td align="left">Shipping State</td>
+<td align="left">Shipping State (only for physical products)</td>
 </tr>
 <tr>
 <td align="left">shp_zip</td>
 <td align="left">String</td>
-<td align="left">Shipping Zip</td>
+<td align="left">Shipping Zip (only for physical products)</td>
 </tr>
 <tr>
 <td align="left">shp_country</td>
 <td align="left">String</td>
-<td align="left">Shipping Country</td>
+<td align="left">Shipping Country (only for physical products)</td>
 </tr>  
 </tbody>
 </table>
