@@ -33,6 +33,7 @@ Required items appear in bold type.</p>
 <td align="left">String</td>
 <td align="left">Customer Email Address</td>
 </tr>
+<tr>
 <td align="left">address</td>
 <td align="left">String</td>
 <td align="left">Billing Address</td>
