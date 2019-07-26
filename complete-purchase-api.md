@@ -1,4 +1,4 @@
-<h1>omplete Purchase API - Implementation Guide</h1><br>
+<h1>Complete Purchase API - Implementation Guide</h1><br>
 <p>The “Complete Purchase” API should be triggered to Create an Order containing the items under a ClickCRM account's shopping cart.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/completepurchase</code><br></p>
