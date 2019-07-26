@@ -28,7 +28,6 @@ Required items appear in bold type.</p>
 <td align="left">Number</td>
 <td align="left">Customer ID (provided by the Add Customer API)</td>
 </tr>
-<tr>
 </tbody>
 </table>
 <br>
