@@ -35,7 +35,7 @@ Required items appear in bold type.</p>
 </tr>
 <td align="left">address</td>
 <td align="left">String</td>
-<td align="left">Customer address</td>
+<td align="left">Customer Address</td>
 </tr>
 <tr>
 <td align="left">city</td>
