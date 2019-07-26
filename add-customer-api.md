@@ -57,11 +57,16 @@ Required items appear in bold type.</p>
 <td align="left">String</td>
 <td align="left">Customer Country</td>
 </tr>
- <tr>
+<tr>
 <td align="left">phone</td>
 <td align="left">String</td>
 <td align="left">Customer Phone</td>
 </tr>
+<tr>
+<td align="left">ipaddress</td>
+<td align="left">String</td>
+<td align="left">Customer IP Address</td>
+</tr> 
 <tr>
 <td align="left">comments</td>
 <td align="left">String</td>
@@ -72,11 +77,6 @@ Required items appear in bold type.</p>
 <td align="left">String</td>
 <td align="left">Referring Affiliate ID</td>
 </tr>
-<tr>
-<td align="left">ipaddress</td>
-<td align="left">String</td>
-<td align="left">Customer IP Address</td>
-</tr> 
 <tr>
 <td align="left">subid</td>
 <td align="left">String</td>
