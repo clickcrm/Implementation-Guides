@@ -42,3 +42,9 @@ The implementation guides below will assist you with integrating ClickCRM.
 <ul>
   <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/get-affiliate-links-api.md">Implementation Guide</a>
 </ul>
+
+<h2>Add Customer API</h2>
+<p>The API should be triggered to create a new customer record in the ClickCRM system.</p>
+<ul>
+  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/add-customer-api.md">Implementation Guide</a>
+</ul>
