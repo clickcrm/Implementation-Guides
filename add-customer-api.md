@@ -40,7 +40,7 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left">city</td>
 <td align="left">String</td>
-<td align="left">Billingr City</td>
+<td align="left">Billing City</td>
 </tr>
 <tr>
 <td align="left">state</td>
