@@ -79,7 +79,7 @@ Required items appear in bold type.</p>
 </tr>
 <tr>
 <td align="left">subid</td>
-<td align="left">String</td>
+<td align="left">Numeric</td>
 <td align="left">Customer Additional Identifier</td>
 </tr>   
 </tbody>
