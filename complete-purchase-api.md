@@ -34,4 +34,4 @@ All the parameters are required.</p>
 <p><strong>Example</strong></p>
 <p><code>https://secure.clickcrm.com/v2/completepurchase?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345</code><br>
   
- <p><b>The API outputs</b> a Result string (Success or Error message) and <b>the new created Order ID</b> (on success). It should be called after calling the Add Customer and Add To Cart APIs.
+ <p><b>The API outputs</b> a Result string (success or error message) and <b>the new created Order ID</b> (on success). It should be called after calling the Add Customer and Add To Cart APIs.
