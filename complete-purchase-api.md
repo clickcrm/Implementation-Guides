@@ -24,22 +24,9 @@ Required items appear in bold type.</p>
 <td align="left">Unique API key (available under your ClickCRM account – setup page)</td>
 </tr>
 <tr>
-<td align="left"><strong>name</strong></td>
-<td align="left">String</td>
-<td align="left">Customer Full Name</td>
-</tr>
-<tr>
 <td align="left"><strong>user_id</strong></td>
 <td align="left">Number</td>
-<td align="left">Customer ID (outputted by the Add Customer API)</td>
-</tr>
-<td align="left"><strong>product_codename</strong></td>
-<td align="left">String</td>
-<td align="left">Product Codename</td>
-</tr>
-<td align="left">quantity</td>
-<td align="left">Number</td>
-<td align="left">Product Quantity (if not provided the default value is 1)</td>
+<td align="left">Customer ID (provided by the Add Customer API)</td>
 </tr>
 <tr>
 </tbody>
