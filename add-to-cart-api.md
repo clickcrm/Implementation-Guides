@@ -1,5 +1,5 @@
 <h1>Add To Cart API - Implementation Guide</h1><br>
-<p>The “Add To Cart”  should be triggered to add products under a ClickCRM account's shopping cart.</p>
+<p>The “Add To Cart”  should be triggered to Add Products under a ClickCRM account's shopping cart.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addtocart</code><br></p>
 <p><strong>Parameters</strong><br>
