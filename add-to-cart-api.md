@@ -44,4 +44,4 @@ Required items appear in bold type.</p>
 <p><strong>Example</strong></p>
 <p><code>https://secure.clickcrm.com/v2/addtocart?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345&product_codename=thyroid-3-onetime-CT&quantity=2</code><br>
   
-<p><b>Note: The API should be called after calling the Add Customer API.
+<p>Note: The API should be called after calling the Add Customer API.
