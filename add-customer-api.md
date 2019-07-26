@@ -31,7 +31,7 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left"><strong>emailaddress</strong></td>
 <td align="left">String</td>
-<td align="left">Customer Email address</td>
+<td align="left">Customer Email Address</td>
 </tr>
 <td align="left">address</td>
 <td align="left">String</td>
