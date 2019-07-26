@@ -46,4 +46,4 @@ Required items appear in bold type.</p>
 </table>
 <br>
 <p><strong>Example</strong></p>
-<p><code>https://secure.clickcrm.com/v2/addtocart?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345&product_codename=omg_bm_2&quantity=2</code><br>
+<p><code>https://secure.clickcrm.com/v2/addtocart?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345&product_codename=thyroid-3-onetime-CT&quantity=2</code><br>
