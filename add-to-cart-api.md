@@ -28,10 +28,12 @@ Required items appear in bold type.</p>
 <td align="left">Number</td>
 <td align="left">Customer ID (outputted by the Add Customer API)</td>
 </tr>
+<tr>
 <td align="left"><strong>product_codename</strong></td>
 <td align="left">String</td>
 <td align="left">Product Codename</td>
 </tr>
+<tr>
 <td align="left">quantity</td>
 <td align="left">Number</td>
 <td align="left">Product Quantity (if not provided the default value is 1)</td>
