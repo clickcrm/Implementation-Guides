@@ -88,11 +88,6 @@ Required items appear in bold type.</p>
 <td align="left">Set it to 1 to store the credit card details</td>
 </tr>
 <tr>
-<td align="left">flag_validate_card</td>
-<td align="left">Numeric</td>
-<td align="left">Set it to 1 to store the credit card details</td>
-</tr>  
-<tr>
 <td align="left">card_number</td>
 <td align="left">String</td>
 <td align="left">Card Number</td>
@@ -107,12 +102,7 @@ Required items appear in bold type.</p>
 <td align="left">String</td>
 <td align="left">Card Expiration Year</td>
 </tr>
- <tr>
-<td align="left">card_ccv</td>
-<td align="left">String</td>
-<td align="left">Card CCV</td>
-</tr> 
- <tr>
+<tr>
 <td align="left">card_ccv</td>
 <td align="left">String</td>
 <td align="left">Card CCV</td>
@@ -120,7 +110,7 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left">shp_name</td>
 <td align="left">String</td>
-<td align="left">Shipping Name</td>
+<td align="left">Shipping Name (if not provided we will store the Customer Full Name value)</td>
 </tr>
 <tr>
 <td align="left">shp_address</td>
