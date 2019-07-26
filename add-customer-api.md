@@ -85,7 +85,7 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left">flag_validate_card</td>
 <td align="left">Numeric</td>
-<td align="left">Set it to 1 to store the credit card details</td>
+<td align="left">Set the flag to 1 in order to store the credit card details</td>
 </tr>
 <tr>
 <td align="left">card_number</td>
