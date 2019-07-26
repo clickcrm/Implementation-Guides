@@ -141,4 +141,6 @@ Required items appear in bold type.</p>
 </table>
 <br>
 <p><strong>Example</strong></p>
-<p><code>https://secure.clickcrm.com/v2/addaffiliate?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&name=John+Doe&emailaddress=john_doe%40mydomain.com</code><br>
+<p><code>https://secure.clickcrm.com/v2/addcustomer?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&name=John+Doe&emailaddress=john_doe%40mydomain.com&address=2230%20EDawson%20Cove&city=Clovis&zip=936114&state=California&country=United%20States&ipaddress=11.22.33.44&phone=44556633&aff_id=123&flag_validate_card=1&card_number=1234567891011121&card_month=03&card_year=2022&card_cvv=777</code><br>
+  
+<p>Note: If the shipping details are not provided, the billing details will be used as shipping details.</p>  
