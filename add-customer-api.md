@@ -1,8 +1,7 @@
-<h1>Add Affiliate API - Implementation Guide</h1><br>
-<p>The “Add Affiliate” API should be triggered to create a new affiliate record in the ClickCRM system.</p>
-<p>Note: If you’re using ClickCRM default affiliate signup page – there is no need to call this API. Its designed to be used in cases where the affiliate is created outside of the ClickCRM system.</p>
+<h1>Add Customer API - Implementation Guide</h1><br>
+<p>The “Add Customer” API should be triggered to create a new customer record in the ClickCRM system.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
-<strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addaffiliate</code><br></p>
+<strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addcustomer</code><br></p>
 <p><strong>Parameters</strong><br>
 Required items appear in bold type.</p>
 <table>
@@ -27,48 +26,62 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left"><strong>name</strong></td>
 <td align="left">String</td>
-<td align="left">Affiliate Full Name</td>
+<td align="left">Customer Full Name</td>
 </tr>
 <tr>
 <td align="left"><strong>emailaddress</strong></td>
 <td align="left">String</td>
-<td align="left">Affiliate Email address</td>
+<td align="left">Customer Email address</td>
 </tr>
-<tr>
-<td align="left"><strong>username</strong></td>
-<td align="left">String</td>
-<td align="left">Affiliate unique username or ID in your system (this ID should never change)</td>
-</tr>
-<tr>
 <td align="left">address</td>
 <td align="left">String</td>
-<td align="left">Affiliate address</td>
+<td align="left">Customer address</td>
 </tr>
 <tr>
 <td align="left">city</td>
 <td align="left">String</td>
-<td align="left">Affiliate City</td>
+<td align="left">Customer City</td>
 </tr>
 <tr>
 <td align="left">state</td>
 <td align="left">String</td>
-<td align="left">Affiliate State</td>
-</tr>
-<tr>
-<td align="left">state</td>
-<td align="left">String</td>
-<td align="left">Affiliate State</td>
+<td align="left">Customer State</td>
 </tr>
 <tr>
 <td align="left">zip</td>
 <td align="left">String</td>
-<td align="left">Affiliate Zip</td>
+<td align="left">Customer Zip</td>
 </tr>
 <tr>
 <td align="left">country</td>
 <td align="left">String</td>
-<td align="left">Affiliate Country</td>
+<td align="left">Customer Country</td>
 </tr>
+ <tr>
+<td align="left">phone</td>
+<td align="left">String</td>
+<td align="left">Customer Phone</td>
+</tr>
+<tr>
+<td align="left">comments</td>
+<td align="left">String</td>
+<td align="left">Customer Comments</td>
+</tr>
+<tr>
+<td align="left">aff_id</td>
+<td align="left">String</td>
+<td align="left">Referring Affiliate ID</td>
+</tr>
+<tr>
+<td align="left">ipaddress</td>
+<td align="left">String</td>
+<td align="left">Customer IP Address</td>
+</tr> 
+<tr>
+<td align="left">subid</td>
+<td align="left">String</td>
+<td align="left">Customer Additional Identifier</td>
+</tr>   
 </tbody>
 </table>
 <br>
