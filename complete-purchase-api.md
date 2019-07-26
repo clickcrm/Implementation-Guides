@@ -32,4 +32,4 @@ All the parameters are required.</p>
 </table>
 <br>
 <p><strong>Example</strong></p>
-<p><code>https://secure.clickcrm.com/v2/addtocart?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345</code><br>
+<p><code>https://secure.clickcrm.com/v2/completepurchase?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345</code><br>
