@@ -3,7 +3,7 @@
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/completepurchase</code><br></p>
 <p><strong>Parameters</strong><br>
-Required items appear in bold type.</p>
+All the parameters are required.</p>
 <table>
 <thead>
 <tr>
