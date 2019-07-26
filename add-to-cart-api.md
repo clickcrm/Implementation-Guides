@@ -38,7 +38,6 @@ Required items appear in bold type.</p>
 <td align="left">Number</td>
 <td align="left">Product Quantity (if not provided the default value is 1)</td>
 </tr>
-<tr>
 </tbody>
 </table>
 <br>
