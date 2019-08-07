@@ -66,7 +66,7 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left">addresses_address</td>
 <td align="left">String</td>
-<td align="left>Shipping address</td>
+<td align="left">Shipping address</td>
 </tr>  
 <tr>
 <td align="left">addresses_city</td>
@@ -81,7 +81,7 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left">addresses_country</td>
 <td align="left">String</td>
-<td align="left>Shipping address Country</td>
+<td align="left">Shipping address Country</td>
 </tr>                    
 </tbody>
 </table>
