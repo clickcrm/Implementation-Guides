@@ -24,14 +24,14 @@ Required items appear in bold type.</p>
 <td align="left">Unique API key (available under your ClickCRM account – setup page)</td>
 </tr>
 <tr>
-<td align="left"><strong>user_id</strong></td>
-<td align="left">Number</td>
-<td align="left">Customer ID (outputted by the Add Customer API)</td>
+<td align="left"><strong>s</strong></td>
+<td align="left">String</td>
+<td align="left">Cart Session ID</td>
 </tr>
 <tr>
-<td align="left"><strong>product_codename</strong></td>
+<td align="left"><strong>creditcards_name</strong></td>
 <td align="left">String</td>
-<td align="left">Product Codename</td>
+<td align="left">Billing  First Name and Last Name separated by space</td>
 </tr>
 <tr>
 <td align="left">quantity</td>
@@ -42,6 +42,6 @@ Required items appear in bold type.</p>
 </table>
 <br>
 <p><strong>Example</strong></p>
-<p><code>https://secure.clickcrm.com/v2/addtocart?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345&product_codename=thyroid-3-onetime-CT&quantity=2</code><br>
+<p><code>http://secure.clickcrm.com/v2/docheckout?a=2390&api_key=Your_API_KEY&s=sessid2019073108222750853497d0d87d6f823bcd70d7eb4a26146a8fab&creditcards_name=FirstName LastName&creditcards_state=Maramures&emailaddress=test.test+12@softwareprojects.com&creditcards_country=Romania&creditcards_zip=1234&creditcards_cardnumber=4583286917384859&creditcards_ccv=3455&addresses_address=adresa shipping&addresses_city=oras&addresses_zip=zip&addresses_country=Romania&creditcards_address=Enescu 5</code><br>
   
-<p>Note: The API should be called after calling the Add Customer API.
+<p>Note: The API should be called after the items have been placed in the cart.</p>
