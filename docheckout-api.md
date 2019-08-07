@@ -34,10 +34,55 @@ Required items appear in bold type.</p>
 <td align="left">Billing  First Name and Last Name separated by space</td>
 </tr>
 <tr>
-<td align="left">quantity</td>
-<td align="left">Number</td>
-<td align="left">Product Quantity (if not provided the default value is 1)</td>
+<td align="left"><strong>creditcards_state</strong></td>
+<td align="left">String</td>
+<td align="left">Billing  State</td>
+</tr>  
+<tr>
+<td align="left"><strong>creditcards_country</strong></td>
+<td align="left">String</td>
+<td align="left">Billing  Country</td>
+</tr>  
+<tr>
+<td align="left"><strong>creditcards_zip</strong></td>
+<td align="left">String</td>
+<td align="left">Billing  ZIP</td>
 </tr>
+<tr>
+<td align="left"><strong>creditcards_cardnumber</strong></td>
+<td align="left">String</td>
+<td align="left">Card Number</td>
+</tr>      
+<tr>
+<td align="left"><strong>creditcards_ccv</strong></td>
+<td align="left">String</td>
+<td align="left">Card Code</td>
+</tr>      
+<tr>
+<td align="left"><strong>emailaddress</strong></td>
+<td align="left">String</td>
+<td align="left">Customer Email Address</td>
+</tr>
+<tr>
+<td align="left">addresses_address</td>
+<td align="left">String</td>
+<td align="left>Shipping address</td>
+</tr>  
+<tr>
+<td align="left">addresses_city</td>
+<td align="left">String</td>
+<td align="left>Shipping address city</td>
+</tr>  
+<tr>
+<td align="left">addresses_zip</td>
+<td align="left">String</td>
+<td align="left>Shipping address ZIP Code</td>
+</tr>
+<tr>
+<td align="left">addresses_country</td>
+<td align="left">String</td>
+<td align="left>Shipping address Country</td>
+</tr>                     
 </tbody>
 </table>
 <br>
