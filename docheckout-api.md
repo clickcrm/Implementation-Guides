@@ -97,6 +97,16 @@ Required items appear in bold type.</p>
 <td align="left">addresses_state</td>
 <td align="left">String</td>
 <td align="left">Shipping address State</td>
+</tr> 
+<tr>
+<td align="left">is_free</td>
+<td align="left">String</td>
+<td align="left">For free orders</td>
+</tr>   
+<tr>
+<td align="left">is_test</td>
+<td align="left">String</td>
+<td align="left">For test orders</td>
 </tr>     
 </tbody>
 </table>
