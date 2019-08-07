@@ -76,7 +76,7 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left">addresses_zip</td>
 <td align="left">String</td>
-<td align="left>Shipping address ZIP Code</td>
+<td align="left">Shipping address ZIP Code</td>
 </tr>
 <tr>
 <td align="left">addresses_country</td>
