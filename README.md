@@ -60,3 +60,9 @@ The implementation guides below will assist you with integrating ClickCRM.
 <ul>
   <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/complete-purchase-api.md">Implementation Guide</a>
 </ul>
+
+<h2>DoCheckout API</h2>
+<p>The API should be triggered to Create an Order containing the items under a ClickCRM account's shopping cart using the session ID.</p>
+<ul>
+  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/docheckout-api.md">Implementation Guide</a>
+</ul>
