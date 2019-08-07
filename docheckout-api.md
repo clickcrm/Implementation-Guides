@@ -34,6 +34,11 @@ Required items appear in bold type.</p>
 <td align="left">Billing  First Name and Last Name separated by space</td>
 </tr>
 <tr>
+<td align="left"><strong>creditcards_address</strong></td>
+<td align="left">String</td>
+<td align="left">Billing  Address</td>
+</tr>  
+<tr>
 <td align="left"><strong>creditcards_city</strong></td>
 <td align="left">String</td>
 <td align="left">Billing  City</td>
