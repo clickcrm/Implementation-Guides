@@ -82,7 +82,12 @@ Required items appear in bold type.</p>
 <td align="left">addresses_country</td>
 <td align="left">String</td>
 <td align="left">Shipping address Country</td>
-</tr>                    
+</tr>
+<tr>
+<td align="left">addresses_state</td>
+<td align="left">String</td>
+<td align="left">Shipping address State</td>
+</tr>     
 </tbody>
 </table>
 <br>
