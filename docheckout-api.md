@@ -71,7 +71,7 @@ Required items appear in bold type.</p>
 <tr>
 <td align="left">addresses_city</td>
 <td align="left">String</td>
-<td align="left>Shipping address city</td>
+<td align="left">Shipping address city</td>
 </tr>  
 <tr>
 <td align="left">addresses_zip</td>
