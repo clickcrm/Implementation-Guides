@@ -1,5 +1,5 @@
 <h1>Get Customer API - Implementation Guide</h1><br>
-<p>The “Get Customer” API should be triggered to get the customer details.</p>
+<p>The “Get Customer” API should be triggered to get the customer details based on one of the following: user ID, email address, unique cart session identifier.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/do_getcustomer</code><br></p>
 <p><strong>Parameters</strong><br>
