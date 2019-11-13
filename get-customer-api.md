@@ -1,9 +1,11 @@
-<h1>Get Affiliate Links API - Implementation Guide</h1><br>
-<p>The “Get Affiliate Links” API should be triggered to get the offer links for a specific affiliate.</p>
+<h1>Get Customer Details API - Implementation Guide</h1><br>
+<p>The “Get Customer Details” API should be triggered to get the relevant details about a customer.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
-<strong>URL</strong>: <code>https://secure.clickcrm.com/v2/get_affiliate_links</code><br></p>
+<strong>URL</strong>: <code>https://secure.clickcrm.com/v2/do_getcustomer</code><br></p>
 <p><strong>Parameters</strong><br>
 Required items appear in bold type.</p>
+<br>
+<p>Note: At least one of the following params is required: User ID, Email address, Session ID</p>
 <table>
 <thead>
 <tr>
@@ -24,35 +26,52 @@ Required items appear in bold type.</p>
 <td align="left">API key provided with your account credentials</td>
 </tr>
 <tr>
-<td align="left"><strong>emailaddress</strong></td>
+<td align="left">user_id</td>
+<td align="left">Numeric</td>
+<td align="left">Customer user ID</td>
+</tr>
+<tr>
+<td align="left">emailaddress</td>
 <td align="left">String</td>
 <td align="left">Affiliate email address</td>
+</tr>
+<tr>
+<td align="left">sess_id</td>
+<td align="left">String</td>
+<td align="left">Unique session identifier</td>
 </tr>
 </tbody>
 </table>
 <br>
 <p><strong>Example</strong></p>
-<p><code>http://secure.clickcrm.com/v2/get_affiliate_links?a=5336&api_key=d1beb3c4970324d9acfbb0140093828f&emailaddress=manager@convertcoldmedia.com</code><br>
+<p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&emailaddress=tshesafer22@gmail.com</code></p><br>
 
 <p>The JSON response looks like this:</p>
 <pre><code>
-{  
+{ 
    "result":1,
-   "result_str":"Successfully retrieved affiliate offer links",
-   "data":{  
-      "offers":[  
-         {  
-            "name":"Power Efficiency Guide",
-            "link":"Link 1"
-         },
-         {  
-            "name":"The Two Weeks Diet",
-            "link":"Link 2"
-         }
-      ],
-      "message":"Successfully retrieved affiliate offer links"
+   "result_str":"Successfully retrieved the customer details",
+   "data":{ 
+      "customer":{ 
+         "user_id":"213263",
+         "rr_createdate":"2019-11-13 10:54:23",
+         "name":"Andy Shaffer",
+         "emailaddress":"tshesafer22@gmail.com",
+         "phone":"8183223183",
+         "city":"Wernersville",
+         "address":"78 S Reber St  Apt 19",
+         "state":"Pennsylvania",
+         "zip":"19565",
+         "country":"United States",
+         "referrer_name":"SNS Thomas Johnson",
+         "referrer_url":"randomurl.com\/sales\/turmeric\/thanksgiving-2019",
+         "ipaddress":"185.217.69.237",
+         "subid":"",
+         "subid2":"",
+         "subid3":"",
+         "subid4":"",
+         "subid5":"1066"
+      }
    }
 }
 </code></pre>
-<br>
-<p>Note: In order to get a functional URL, the link in the API response must be decoded (urldecode).</p>
