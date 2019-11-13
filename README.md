@@ -70,5 +70,5 @@ The implementation guides below will assist you with integrating ClickCRM.
 <h2>Get Customer API</h2>
 <p>The API should be triggered to Get the Customer Details stored under a ClickCRM system.</p>
 <ul>
-  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/get-customer-api.m">Implementation Guide</a>
+  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/get-customer-api.md">Implementation Guide</a>
 </ul>
