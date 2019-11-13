@@ -4,8 +4,8 @@
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/do_getcustomer</code><br></p>
 <p><strong>Parameters</strong><br>
 Required items appear in bold type.</p>
-<br>
 <p>Note: At least one of the following params is required: User ID, Email address, Session ID</p>
+<br>
 <table>
 <thead>
 <tr>
@@ -44,9 +44,9 @@ Required items appear in bold type.</p>
 </table>
 <br>
 <p><strong>Example</strong></p>
-<p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&emailaddress=tshesafer22@gmail.com</code></p><br>
+<p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&emailaddress=tshesafer22@gmail.com</code></p>
 
-<p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&user_id=12345</code></p><br>
+<p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&user_id=12345</code></p>
 
 <p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&sess_id=896gjgjhg333</code></p><br>
 
