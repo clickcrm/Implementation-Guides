@@ -4,7 +4,6 @@
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/do_getcustomer</code><br></p>
 <p><strong>Parameters</strong><br>
 Required items appear in bold type.</p>
-<br>
 <table>
 <thead>
 <tr>
