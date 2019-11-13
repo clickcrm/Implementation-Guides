@@ -1,5 +1,5 @@
-<h1>Get Customer Details API - Implementation Guide</h1><br>
-<p>The “Get Customer Details” API should be triggered to get the relevant details about a customer.</p>
+<h1>Get Customer API - Implementation Guide</h1><br>
+<p>The “Get Customer” API should be triggered to get the customer details.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
 <strong>URL</strong>: <code>https://secure.clickcrm.com/v2/do_getcustomer</code><br></p>
 <p><strong>Parameters</strong><br>
@@ -45,6 +45,10 @@ Required items appear in bold type.</p>
 <br>
 <p><strong>Example</strong></p>
 <p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&emailaddress=tshesafer22@gmail.com</code></p><br>
+
+<p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&user_id=12345</code></p><br>
+
+<p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&sess_id=896gjgjhg333</code></p><br>
 
 <p>The JSON response looks like this:</p>
 <pre><code>
