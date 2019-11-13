@@ -40,7 +40,7 @@ Required items appear in bold type.</p>
 </tr>
 </tbody>
 </table>
-<p>Note: At least one of the following params is required: user_id, emailaddress, sess_id</p>
+<p><strong>Note:</strong> At least one of the following params is required: user_id, emailaddress, sess_id</p>
 <br>
 <p><strong>Example</strong></p>
 <p><code>https://secure.clickcrm.com/v2/do_getcustomer.php?a=5407&api_key=ec7e26d19d0e2173ab649c1c47d55305&emailaddress=tshesafer22@gmail.com</code></p>
