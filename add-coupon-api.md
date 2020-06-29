@@ -29,15 +29,15 @@ Required items appear in bold type.</p>
 <td align="left">Customer ID (outputted by the Add Customer API)</td>
 </tr>
 <tr>
-<td align="left">s</td>
-<td align="left">String</td>
-<td align="left">Cart Session ID</td>
-</tr>  
-<tr>
 <td align="left"><strong>coupon_code</strong></td>
 <td align="left">String</td>
 <td align="left">Discount Coupon Code</td>
 </tr>
+<tr>
+<td align="left">s</td>
+<td align="left">String</td>
+<td align="left">Cart Session ID</td>
+</tr>  
 </tbody>
 </table>
 <br>
