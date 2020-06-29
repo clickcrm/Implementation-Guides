@@ -29,7 +29,7 @@ Required items appear in bold type.</p>
 <td align="left">Customer ID (outputted by the Add Customer API)</td>
 </tr>
 <tr>
-<td align="left"><strong>s</strong></td>
+<td align="left">s</td>
 <td align="left">String</td>
 <td align="left">Cart Session ID</td>
 </tr>  
@@ -42,6 +42,6 @@ Required items appear in bold type.</p>
 </table>
 <br>
 <p><strong>Example</strong></p>
-<p><code>https://secure.clickcrm.com/v2/addCouponToCart?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345&s=sd3JHG765675HG&coupon_code=7dg35hTG95</code><br>
+<p><code>https://secure.clickcrm.com/v2/addCouponToCart?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345&coupon_code=7dg35hTG95</code><br>
   
 <p>Note: The API should be called after calling the Add To Cart API.
