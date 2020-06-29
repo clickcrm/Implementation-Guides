@@ -1,7 +1,7 @@
-<h1>Add To Cart API - Implementation Guide</h1><br>
-<p>The “Add To Cart” API should be triggered to Add Products under a ClickCRM account's shopping cart.</p>
+<h1>Add Coupon To Cart API - Implementation Guide</h1><br>
+<p>The “Add Coupon To Cart” API should be triggered to Add a Discount Coupon under a ClickCRM account's shopping cart.</p>
 <p><strong>HTTP Request Method:</strong> <code>GET</code> or <code>POST</code><br>
-<strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addtocart</code><br></p>
+<strong>URL</strong>: <code>https://secure.clickcrm.com/v2/addCouponToCart</code><br></p>
 <p><strong>Parameters</strong><br>
 Required items appear in bold type.</p>
 <table>
@@ -29,19 +29,19 @@ Required items appear in bold type.</p>
 <td align="left">Customer ID (outputted by the Add Customer API)</td>
 </tr>
 <tr>
-<td align="left"><strong>product_codename</strong></td>
+<td align="left"><strong>s</strong></td>
 <td align="left">String</td>
-<td align="left">Product Codename</td>
-</tr>
+<td align="left">Cart Session ID</td>
+</tr>  
 <tr>
-<td align="left">quantity</td>
-<td align="left">Number</td>
-<td align="left">Product Quantity (if not provided the default value is 1)</td>
+<td align="left"><strong>coupon_code</strong></td>
+<td align="left">String</td>
+<td align="left">Discount Coupon Code</td>
 </tr>
 </tbody>
 </table>
 <br>
 <p><strong>Example</strong></p>
-<p><code>https://secure.clickcrm.com/v2/addtocart?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345&product_codename=thyroid-3-onetime-CT&quantity=2</code><br>
+<p><code>https://secure.clickcrm.com/v2/addCouponToCart?a=1234&api_key=asndjaf3TUU6jhbendnheudhen&user_id=12345&s=sd3JHG765675HG&coupon_code=7dg35hTG95</code><br>
   
-<p>Note: The API should be called after calling the Add Customer API.
+<p>Note: The API should be called after calling the Add To Cart API.
