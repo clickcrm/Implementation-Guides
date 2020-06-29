@@ -64,7 +64,7 @@ The implementation guides below will assist you with integrating ClickCRM.
 <h2>Add Coupon to Cart API</h2>
 <p>The API should be triggered to add a Discount Coupon under a ClickCRM account's shopping cart.</p>
 <ul>
-  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/complete-purchase-api.md">Implementation Guide</a>
+  <li><a href="https://github.com/clickcrm/Implementation-Guides/blob/master/add-coupon-api.md">Implementation Guide</a>
 </ul>
 
 <h2>DoCheckout API</h2>
